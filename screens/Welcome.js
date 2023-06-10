@@ -9,7 +9,7 @@ const height = Dimensions.get("window").height
 
 const imagePerc = 0.75
 
-function Welcome() {
+function Welcome({navigation}) {
   return (
     <LinearGradient colors={[COLORS.purple, COLORS.lightPurple]} style={styles.linearGradient}>
       <View style={styles.container}>
@@ -22,6 +22,7 @@ function Welcome() {
         <TouchableOpacity 
           style={styles.button}
           activeOpacity={0.7}
+          onPress={() => navigation.navigate("Home")}
         >
           <Text style={styles.buttonText}>Get Started</Text>
         </TouchableOpacity>

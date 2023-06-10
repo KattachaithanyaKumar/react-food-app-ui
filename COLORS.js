@@ -4,4 +4,6 @@ export default COLORS = {
   red: "#FF000F",
   yellow: "#C9AA05",
   white: "#FFFFFF",
+  lightGray: "#EFEEEE",
+  lightText: "#868585"
 }
